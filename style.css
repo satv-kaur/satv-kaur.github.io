@@ -1,0 +1,33 @@
+/*Satveer's Additions Start Here*/
+body {
+    margin:25px;
+}
+
+h1 {
+    font-size: 50px;
+    background: -webkit-linear-gradient(#FEAC5E, #C779D0, #4BC0C8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+.polaroid {
+    width: 200px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+  }
+  
+.container {
+    text-align: center;
+    padding: 10px 20px;
+  }
+
+#fineprint {
+      font-size: 10px;
+  }
+
+#hovertext:hover {
+    color: #7f7fd5;
+}
+/*Satveer's Additions End Here */

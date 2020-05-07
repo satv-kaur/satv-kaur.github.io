@@ -3,6 +3,9 @@
 <head>
   <title>Team 2 Webpage</title>
 </head>
+<!--Satveer: Link External Style Sheet-->
+<link rel="stylesheet" type="text/css" href="style.css">
+<!--Satveer: Table Stylization. Note: Done perviously, but added hover.-->
 <style>
   table
   {
@@ -18,10 +21,11 @@
   {
     background-color: #dddddd;
   }
-  
+  tr:hover {background-color: #f5f5f5;}
   </style>
 <body>
-<h1>Things To Do During Quarantine</h1>
+  <!--Satveer: added <br> to format header-->
+<h1>Things To Do During <br> Quarantine</h1>
   <!--The page must include these HTML tags:
         headings (<h1>, <h2>, etc.),
         paragraph <p>,
@@ -204,30 +208,41 @@ and providing some insight on what I enjoy most about the game-->
     </div>
 </div>
   
-<!-- Satveer's Work starts here. Focus: Animal Crossing New Horizons -->
-<h3>Satveer Kaur's Activity</h3>
+<!-- Satveer's Work starts here. Focus: Animal Crossing New Horizons-->
+<h3 style="color: #d3959b">Satveer Kaur's Activity</h3>
 <div>
-  <p> <span>One activity to do during quarantine is to play video games!</span><br>
+  <p> One activity to do during quarantine is to play video games!<br>
     I am not a big gamer, but I love Animal Crossing. I bought a switch<br>
     just for <em>Animal Crossing New Horizons</em>! I've been playing it every<br>
-    day since I got it. Here is some information about my island!
+    day since I got it. Here is some information about my island!*
   </p>
 </div>
+<!--Satveer: Updated for major stylization. Uses classes, ids, in-line style, manipulation of images, etc.-->
 <div>
-  <p><strong>Island Name:</strong> Daydream<br>
-     <strong>Player Name:</strong> Satveer<br>
-     <strong>Current Nicknames:</strong> Sapphire and Sweetkins<br>
+  <p><strong>Island Name:</strong><span id="hovertext"> Daydream</span><br>
+     <strong>Player Name:</strong><span id="hovertext"> Satveer</span><br>
+     <strong>Current Nicknames:</strong><span id="hovertext"> Sapphire </span>and <span id="hovertext">Sweetkins</span><br>
      <strong>Number of Residences:</strong> 10<br>
-     <strong>Current Layout:</strong><br>
-     <img src="images/CurrentLayout.jpg" alt= "Current Island Layout" width="200" height="200">
-     <em>(<strong>Note:</strong> I am in the middle of terraforming!)</em><br>
-     <strong>(Current) Desired Layout:</strong><br>
+     <div class="polaroid">
+       <img src="images/CurrentLayout.jpg" alt= "Current Island Layout" width="200">
+       <div class="container">
+          <strong>Current Layout</strong>
+      </div>
+      </div>
+      <em>(<strong>Note:</strong> I am in the middle of terraforming!)</em><br>
+      <br>
+     <div class="polaroid">
      <img src="images/HappyIslandDesigner.png" alt= "Desired Island Layout" width="200">
-     <em>(<strong>Note:</strong> Trees and flowers do not show up on the in-game map!)</em><br>
+     <div class="container">
+        <strong>(Current) Desired Layout</strong>
+     </div>
+     </div>
+     <em>(<strong>Note:</strong> Trees and flowers do not show up on the in-game map!)</em>
   </p>
 </div>
   <p>
-    <strong>List of Current Residences:</strong><br>
+    <!--Satveer: Updated for text stylization.-->
+    <strong style="color: #83a4d4;">List of Current Residences:</strong><br>
     <ul> 
       <li>Astrid <em>(Leaving soon!)</em></li>
       <li>Beardo</li>
@@ -240,7 +255,8 @@ and providing some insight on what I enjoy most about the game-->
       <li>Roald</li>
       <li>Simon</li>
   </ul>
-  <strong>List of All Residences:</strong><br>
+  <!--Satveer: Updated for text stylization.-->
+  <strong style="color: #83a4d4">List of All Residences:</strong><br>
   <ul> 
     <li>Astrid</li>
     <li>Beardo</li>
@@ -254,7 +270,8 @@ and providing some insight on what I enjoy most about the game-->
     <li>Roald</li>
     <li>Simon</li>
   </ul>
-  <strong>Ranking My Current Villagers:</strong><br>
+  <!--Satveer: Updated for text stylization.-->
+  <strong style= "color: #83a4d4">Ranking My Current Villagers:</strong><br>
   <ol> 
     <li>Roald</li>
     <li>Puddles</li>
@@ -267,11 +284,10 @@ and providing some insight on what I enjoy most about the game-->
     <li>Boyd</li>
     <li>Curlos</li>
   </ol>
-
-
   </p>
+  <!--Satveer: Updated to include id usage.-->
+  <p id="fineprint"><em>* Accurate as of April 21, 2020.</em></p>
 <div>
-
 </div>
 </body>
 </html>
