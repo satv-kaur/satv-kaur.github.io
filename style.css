@@ -98,4 +98,7 @@ div.button1 {
 .textAlignHeading {
   text-align: center;
 }
+#roundImg2 {
+  border-radius: 15%;
+}
 
