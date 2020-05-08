@@ -37,3 +37,15 @@ h1 {
     margin-left:15%; 
     margin-right:15%;
   }
+  /* Sample Button example on sample CSS page */
+div.button {
+    border: 1px solid red;
+    border-radius: 10px;
+    width: 100px;
+    padding: 19px;
+    text-align: center;
+    background-color: pink;
+    margin: auto;
+    -webkit-transition: width 1s, height 1s;
+    transition: width 1s, height 1s;
+}
