@@ -75,6 +75,8 @@ This table gives the reader information on who we are (Name age grade)-->
 </div>
 <!-- Eric's Work starts here. My Focus: Valorant Closed beta, informing how to gain access to
 the beta as well as what I believe to be the rankings for the game. Added a style tag-->
+<!--Eric: Updated code for stylization. Uses classes, ids, in-line style, manipulation of images and so on within this section.-->
+
 <style>
 .center{
 color: brown;
@@ -88,8 +90,8 @@ table, td, th {
 }
 </style>
 <h3 class = "center">Eric I's Activity</h3>
-<div>
-  <p style= "text-align: center;"> <span>Like most teenagers, I've turned to video games as a way to <br>
+<div class = "Strongcenter">
+  <p> <span>Like most teenagers, I've turned to video games as a way to <br>
   spend my free time during this quarantine.</span> Even before this quarantine <br>
  I was a huge gamer. I even have my own custom built PC! Most gamers have <br>
 heard of the new game <em>Valorant</em>, and if you haven't it's a new game coming <br>
@@ -100,7 +102,7 @@ that I used to get access to the game! </p>
 <div>
   <!--Eric: Updated for text stylization.-->
   <p class = "Strongcenter"><strong>How to get access to the <em>Valorant</em> closed beta:</strong><br>
-    <ul>
+    <ul class = "centeredLi">
       <li>Make or sign into a twitch account</li>
       <li>Make a riot games account</li>
       <li>Link said account with said twitch account</li>
@@ -109,7 +111,7 @@ that I used to get access to the game! </p>
       the pool for the day!</li>
     </ul>
     <strong><div class = "Strongcenter">Some tips for the <em>Valorant</em> closed beta drop pool:</div></strong><br>
-    <ul>
+    <ul class = "centeredLi">
       <li>If you have the twitch stream muted, you will not recieve any drops!<br>
       On chrome, right click the tab at the top and click <em>"mute site"</em></li>
       <li>Once logged two hours, every additional time watched improves <br> 
@@ -131,18 +133,20 @@ that I used to get access to the game! </p>
         <th>Cypher</th>
         <th>Breach</th>
       </tr>
+      
       <tr>
-        <td><img src="images/Raze.PNG" alt= "Raze" width="65"></td>
-        <td><img src="images/Sova.PNG" alt= "Sova" width="65"></td>
-        <td><img src="images/Omen.PNG" alt= "Omen" width="65"></td>
-        <td><img src="images/Jett.PNG" alt= "Jett" width="65"></td>
-        <td><img src="images/Sage.PNG" alt= "Sage" width="65"></td>
-        <td><img src="images/Cypher.PNG" alt= "Cypher" width="65"></td>
-        <td><img src="images/Viper.PNG" alt= "Viper" width="65"></td>
-        <td><img src="images/Phoenix.PNG" alt= "Pheonix" width="65"></td>
-        <td><img src="images/Brimstone.PNG" alt= "Brimstone" width="65"></td>
-        <td><img src="images/breach.PNG" alt= "Breach" width="65"></td>
+        <td><img class = "roundImg" src="images/Raze.PNG" alt= "Raze" width="65"></td>
+        <td><img class = "roundImg" src="images/Sova.PNG" alt= "Sova" width="65"></td>
+        <td><img class = "roundImg" src="images/Omen.PNG" alt= "Omen" width="65"></td>
+        <td><img class = "roundImg" src="images/Jett.PNG" alt= "Jett" width="65"></td>
+        <td><img class = "roundImg" src="images/Sage.PNG" alt= "Sage" width="65"></td>
+        <td><img class = "roundImg" src="images/Cypher.PNG" alt= "Cypher" width="65"></td>
+        <td><img class = "roundImg" src="images/Viper.PNG" alt= "Viper" width="65"></td>
+        <td><img class = "roundImg" src="images/Phoenix.PNG" alt= "Pheonix" width="65"></td>
+        <td><img class = "roundImg" src="images/Brimstone.PNG" alt= "Brimstone" width="65"></td>
+        <td><img class = "roundImg" src="images/breach.PNG" alt= "Breach" width="65"></td>
       </tr>
+
     </table>
     <strong class = "container"><div class = "Strongcenter">Rankings of Weapons in <em>Valorant</em>(From Best-Worst):</div></strong><br>
     
@@ -199,8 +203,11 @@ that I used to get access to the game! </p>
         </td>
       </tr>
     </table>
+    <!--Eric: Updated to use ID's-->
+    <p class = "Strongcenter" id = "fineprint">As of 2020 beta low elo meta</p>
   </p>
-<div class="button"><a href="https://beta.playvalorant.com/en-us/">Explore Valorant today!</a></div>
+  <!--Adds a clickable button with animation of changing when hovered over and clicked-->
+  <a href="https://beta.playvalorant.com/en-us/"><div class="button1">Explore Valorant today!</div></a>
 </div>
 <!--Lars's works start's here, I'll be talking about Teamfight tactics
 and providing some insight on what I enjoy most about the game-->
