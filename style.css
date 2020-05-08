@@ -31,3 +31,9 @@ h1 {
     color: #7f7fd5;
 }
 /*Satveer's Additions End Here */
+/*Eric's addition for tables */
+  table {
+    width:70%; 
+    margin-left:15%; 
+    margin-right:15%;
+  }
