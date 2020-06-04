@@ -76,15 +76,17 @@
     </div>
   </div>
 <!--Script to greet the user depending on their time-->
-<div>
-  <h1 id = "greeting"></h1>
+<div class="textAlignHeading">
+  <h1 id = "greeting"><strong></strong></h1>
   <script>
     var date = new Date();
     var t = date.getHours();
+    var evening = "Good Evening! Welcome to Team 2's Page!";
+    var afternoon = "Good Afternoon! Welcome to Team 2's Page!";
     if(t < 12){
-      document.write("Good Evening! Welcome to Team 2's Page!");
+      document.write(evening.bold());
     }else{
-      document.write("Good Afternoon! Welcome to Team 2's Page!");
+      document.write(afternoon.bold());
     }
   </script>
 </div>
