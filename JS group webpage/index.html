@@ -1,372 +1,402 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <title>Team 2</title>
-  </head>
-  <!--Satveer: Link External Style Sheet-->
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <body>
-    <div class = "container">
-        <div class = "row">
-            <div class = "col-md-12">
-                <div class = "d-flex p-2"; style = "justify-content: space-evenly;  ">
-                    <div class = "p-2;">
-                      <h1>Things To<br>Do<br>During<br>Quarantine</h1>
-                    </div>
-                    <div class = "p-2;">
-                      <!--<div class = "Strongcenter">-->
-                        <!-- This table was edited and implemented by all of us.
-                        This table gives the reader information on who we are (Name age grade)-->
-                        <h1>About Us</h1>
-                        <!--INSTR: I'm not sure what's going on, but this table doesn't resize when the width of the browser window changes. I mean, it's sort of fine, but if you make it super narrow, it might be a problem. You've got this section in a flexbox container within a grid column that's set to the full 12 columns wide. What if you created two grid columns and put this stuff in there instead of the flexboxes?-->
-                        <table>
-                               <tr>
-                                  <th> First </th>
-                                  <th> Last </th>
-                                  <th> Age </th>
-                                  <th> Grade </th>
-                               </tr>
-                               <tr>
-                                  <td> Eric </td>
-                                  <td> Inoue </td>
-                                  <td> 20 </td>
-                                  <td> Sophomore </td>
-                                </tr>
-                                <tr>
-                                  <td>Satveer</td>
-                                  <td>Kaur</td>
-                                  <td>19</td>
-                                  <td>Junior</td>
-                                </tr>
-                                <tr>
-                                  <td>Lars</td>
-                                  <td>Vik</td>
-                                  <td>19</td>
-                                  <td>Sophomore</td>
-                                </tr>
-                                  <td>Ray</td>
-                                  <td>Yu</td>
-                                  <td>19</td>
-                                  <td>Freshmen</td>
-                        
-                        </table>
-                        <!--</div>-->
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class = "row">
-            <div class = "col-md-12">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <div class="navbar" href="#">
-                      <div class="navbar">
-                        <a class="nav-item nav-link active" href="#Lars">Lars <span class="sr-only">(current)</span></a>
-                        <a class="nav-item nav-link" href="#Satveer">Satveer</a>
-                        <a class="nav-item nav-link" href="#Eric">Eric</a>
-                        <a class="nav-item nav-link" href="#Ray">Ray</a>
-                      </div>
-                    </div>
-                  </nav>
-            </div>
-        </div>
-        <div class = "row">
-            <div class = "col-md-12">
-                <h1 id = "Lars"> Lars </h1>
-                  <!--Lars's works start's here, I'll be talking about Teamfight tactics
-                  and providing some insight on what I enjoy most about the game-->
-                  <div>
-                    <div class="textAlignHeading">
-                    <h3 style = "color:rgb(39, 102, 138)">Lars V's Activity</h3>
-                    </div>
-                    <!--Body Paragraph-->
-                      <div class="textMargin">
-                        <p>Quarentine has proven to be difficult when finding activities to do. I've been playing more piano
-                        and similar to Eric and Satveer, I have started playing new games such as <em>Valorant</em> and <em>Animal Crossing:
-                        New Horizons.</em> However above all, I have gotten most of my enjoyment from <em>Teamfight Tactics,</em> a strategy game 
-                        by Riot Games (the same developers as <em>Valorant</em> and <em>League of Legends.</em>) This game doesn't require a good computer 
-                        to play which means you are able to play on mobile wherever you want! Although this is a free game, it also doesn't
-                        have the "pay to win" incentive unlike it's competitors. 
-                        </p>
-                      </div>
-                    <!--Second Paragraph-->
-                      <div>
-                        <strong>Resources I have used while learning:</strong><br> 
-                          <span>Since this game is based on strategy, it might seem daunting to play at first, however here are<br>
-                          some resources I have used to help my gameplay, as well as my overall understanding of the game
-                          </span>
-                        <ul>
-                          <li>
-                            <a href="https://app.mobalytics.gg/tft/set3/team-comps"><strong>Team Composition Guide</strong></a></li>
-                          <li>
-                            <a href="https://www.mobafire.com/teamfight-tactics/items-cheatsheet#items-cheatsheet"><strong>Item Crafting Guide</strong></a></li>
-                          <li>
-                            <a href="https://www.youtube.com/channel/UCUT8RoNBTJvwW1iErP6-b-A/videos"><strong>Disguised Toast's Youtube Channel</strong></a></li>
-                          <li>
-                            <a href="https://www.youtube.com/user/scarraofficial/videos"><strong>scarra's Youtube Channel</strong></a></li>
-                        </ul>
-                      </div>
-                    <!--Third Paragraph-->
-                      <div>
-                        <strong>Team Compositions</strong>
-                        <span>After playing the game for a few weeks, I have started to lean towards some team compositions<br>
-                          which I seem to prefer more than others. All have been provided by the guide mentioned above.
-                          </span>
-                          <!--INSTR: It doesn't matter so much now since right now classes and ids are basically serving the same function, but generally you want to restrict the use of ids for single elements. Each id should be used only once. This will become important as we get into coding and behavioral effects since javascript refers to elements by their ids. In other words, you should change roundImg2 to be a class instead of id.-->
-                          <!--INSTR: I sort of expected you to change this after I left the above comment! You should fix all these ids to classes...-->
-                        <ol class="olFormat">
-                          <li><img id = "roundImg2" src="images/Annie.jpg" alt= "Mech Infiltraitors jpg" width="75" style="margin:5px 0px;vertical-align:middle">
-                            <!--INSTR: Generally, best practice to use all lowercase for tags so Strong should be strong.-->
-                            <Strong style="font-size:150%;margin-left: 10px">Mech Infiltraitors</Strong></li>
-                          <li><img id = "roundImg2" src="images/Syndra.jpg" alt= "Guardians of the Galaxy jpg" width="75" style="margin:5px 0px;vertical-align:middle">
-                            <Strong style="font-size:150%;margin-left: 10px">Guardians of the Galaxy</Strong></li>
-                          <li><img id = "roundImg2" src="images/Irelia.jpg" alt= "Cybernetics jpg" width="75" style="margin:5px 0px;vertical-align:middle">
-                            <Strong style="font-size:150%;margin-left: 10px">Cybernetics</Strong></li>
-                          <li><img id = "roundImg2" src="images/Master_Yi.jpg" alt= "Blade Bros" width="75" style="margin:5px 0px;vertical-align:middle">
-                            <Strong style="font-size:150%;margin-left: 10px">Blade Bros</Strong></li>
-                          <li><img id = "roundImg2" src="images/Jhin.jpg" alt= "Jhin and Friends" width="75" style="margin:5px 0px;vertical-align:middle">
-                            <Strong style="font-size:150%;margin-left: 10px">Jhin and Friends</Strong></li>
-                        </ol>
-                      </div>
-                  </div>
-            </div>
-        </div>
-        <!-- Satveer's Work starts here. Focus: Animal Crossing New Horizons-->
-        <div class = "row">
-            <div class = "col-md-12">
-                <h1 id = "Satveer"> Satveer </h1>
-                <div class="row">
-                  <div class="column">
-                  <div>
-                    <p> One activity to do during quarantine is to play video games!
-                      I am not a big gamer, but I love Animal Crossing. I bought a switch
-                      just for <em>Animal Crossing New Horizons</em>! I've been playing it every
-                      day since I got it. Here is some information about my island!*
-                    </p>
-                  </div>
-                  <!--Satveer: Updated for major stylization. Uses classes, ids, in-line style, manipulation of images, etc.-->
-                  <div>
-                    <!--INSTR: It doesn't matter so much now since right now classes and ids are basically serving the same function, but generally you want to restrict the use of ids for single elements. Each id should be used only once. This will become important as we get into coding and behavioral effects since javascript refers to elements by their ids. In other words, you should change hovertext to be a class instead of id.-->
-                    <!--Satveer:Updated hovertext ID to become a class!-->
-                    <p><strong>Island Name:</strong><span class="hovertext"> Daydream</span><br>
-                      <strong>Player Name:</strong><span class="hovertext"> Satveer</span><br>
-                      <strong>Current Nicknames:</strong><span class="hovertext"> Sapphire </span>and <span class="hovertext">Sweetkins</span><br>
-                      <strong>Number of Residences:</strong> 10<br>
-                      <div class="polaroid">
-                        <img src="images/CurrentLayout.jpg" alt= "Current Island Layout" width="200">
-                        <div class="container-img">
-                            <strong>Current Layout</strong>
-                        </div>
-                      </div>
-                      <span style = "padding-left: 0px;"><em>(<strong>Note:</strong> I am in the middle of terraforming!)</em></span><br>
-                      <br>
-                      <div class="polaroid">
-                        <img src="images/HappyIslandDesigner.png" alt= "Desired Island Layout" width="200">
-                        <div class="container-img">
-                            <strong>(Current) Desired Layout</strong>
-                        </div>
-                        </div>
-                      <em>(<strong>Note:</strong> Trees and flowers do not show up on the in-game map!)</em>
-                    </p>
-                  </div>
-                  </div>
-                  <div class="column">
-                    <div class = "column-center">
-                    <p>
-                      <!--Satveer: Updated for text stylization.-->
-                      <strong style="color: #83a4d4;">List of Current Residences:</strong><br>
-                      <ul> 
-                        <li>Astrid <em>(Leaving soon!)</em></li>
-                        <li>Beardo</li>
-                        <li>Boyd</li>
-                        <li>Curlos</li>
-                        <li>Merengue <em>(Moving in 04.22.20)</em></li>
-                        <li>Puddles</li>
-                        <li>Reneigh</li>
-                        <li>Rhonda</li>
-                        <li>Roald</li>
-                        <li>Simon</li>
-                    </ul>
-                    <!--Satveer: Updated for text stylization.-->
-                    <strong style="color: #83a4d4">List of All Residences:</strong><br>
-                    <ul> 
-                      <li>Astrid</li>
-                      <li>Beardo</li>
-                      <li>Boyd</li>
-                      <li>Curlos</li>
-                      <li>Curly (Past)</li>
-                      <li>Merengue</li>
-                      <li>Puddles</li>
-                      <li>Reneigh</li>
-                      <li>Rhonda</li>
-                      <li>Roald</li>
-                      <li>Simon</li>
-                    </ul>
-                    <!--Satveer: Updated for text stylization.-->
-                    <strong style= "color: #83a4d4">Ranking My Current Villagers:</strong><br>
-                    <ol> 
-                      <li>Roald</li>
-                      <li>Puddles</li>
-                      <li>Reneigh</li>
-                      <li>Beardo</li>
-                      <li>Merengue</li>
-                      <li>Rhonda</li>
-                      <li>Simion</li>
-                      <li>Astrid</li>
-                      <li>Boyd</li>
-                      <li>Curlos</li>
-                    </ol>
-                    </p>
-                    <!--Satveer: Updated to include id usage.-->
-                    <p id="fineprint"><em>* Accurate as of April 21, 2020.</em></p>
-                    </div>
-                </div>
-                </div>
-            </div>
-        </div>
-        <div class = "row">
-            <div class = "col-md-12">
-                <h1 id = "Eric"> Eric </h1>
-                    <h3 class = "center">Valorant</h3>
-                    <div class = "Strongcenter">
-                      <p> <span>Like most teenagers, I've turned to video games as a way to <br>
-                      spend my free time during this quarantine.</span> Even before this quarantine <br>
-                     I was a huge gamer. I even have my own custom built PC! Most gamers have <br>
-                    heard of the new game <em>Valorant</em>, and if you haven't it's a new game coming <br>
-                    out soon developed by Riot Games that's currently in closed beta. There are a <br>
-                    few things you have to do in order to gain access to this beta. Here are a few tips <br>
-                    that I used to get access to the game! </p>
-                    </div>
-                    <div>
-                      <!--Eric: Updated for text stylization.-->
-                      <p class = "Strongcenter"><strong>How to get access to the <em>Valorant</em> closed beta:</strong><br>
-                        <ul>
-                          <li>Make or sign into a twitch account</li>
-                          <li>Make a riot games account</li>
-                          <li>Link said account with said twitch account</li>
-                          <li>Watch any <em>Valorant</em> gameplay on the twitch platform</li>
-                          <li>Once you've logged two hours of watch time you'll be entered into<br>
-                          the pool for the day!</li>
-                        </ul>
-                        <strong><div class = "Strongcenter">Some tips for the <em>Valorant</em> closed beta drop pool:</div></strong><br>
-                        <ul>
-                          <li>If you have the twitch stream muted, you will not recieve any drops!<br>
-                          On chrome, right click the tab at the top and click <em>"mute site"</em></li>
-                          <li>Once logged two hours, every additional time watched improves <br> 
-                            your chances until you hit 40 hours. At that point close the stream<br>
-                          and wait 24 hours to rejoin the beta pool.</li>
-                          <li>You do not need to be following said streamer or need to be active on stream.</li>
-                        </ul>
-                        <strong><div class = "Strongcenter">Rankings of characters in <em>Valorant</em> (From Best - Worst):</div></strong><br>
-                        <table width = "100%">
-                          <tr>
-                            <th>Raze</th>
-                            <th>Sova</th>
-                            <th>Omen</th>
-                            <th>Jett</th>
-                            <th>Viper</th>
-                            <th>Cypher</th>
-                            <th>Pheonix</th>
-                            <th>Brimstone</th>
-                            <th>Cypher</th>
-                            <th>Breach</th>
-                          </tr>
-                          
-                          <tr>
-                            <td><img class = "roundImg" src="images/Raze.PNG" alt= "Raze" width="65"></td>
-                            <td><img class = "roundImg" src="images/Sova.PNG" alt= "Sova" width="65"></td>
-                            <td><img class = "roundImg" src="images/Omen.PNG" alt= "Omen" width="65"></td>
-                            <td><img class = "roundImg" src="images/Jett.PNG" alt= "Jett" width="65"></td>
-                            <td><img class = "roundImg" src="images/Sage.PNG" alt= "Sage" width="65"></td>
-                            <td><img class = "roundImg" src="images/Cypher.PNG" alt= "Cypher" width="65"></td>
-                            <td><img class = "roundImg" src="images/Viper.PNG" alt= "Viper" width="65"></td>
-                            <td><img class = "roundImg" src="images/Phoenix.PNG" alt= "Pheonix" width="65"></td>
-                            <td><img class = "roundImg" src="images/Brimstone.PNG" alt= "Brimstone" width="65"></td>
-                            <td><img class = "roundImg" src="images/breach.PNG" alt= "Breach" width="65"></td>
-                          </tr>
-                    
-                        </table>
-                        <strong class = "container"><div class = "Strongcenter">Rankings of Weapons in <em>Valorant</em>(From Best-Worst):</div></strong><br>
-                        
-                        <table>
-                          <tr>
-                            <th>Sidearms</th>
-                            <th>SMGs</th>
-                            <th>Shotguns</th>
-                            <th>Rifles</th>
-                            <th>Snipers</th>
-                            <th>Heavy</th>
-                          </tr>
-                          <tr>
-                            <td colspan = "1">
-                              <ol>
-                                <li> Ghost <em>(<strong>500 Credits</strong>)</em></li><br>
-                                <li> Frenzy <em>(<strong>400 Credits</strong>)</em></li><br>
-                                <li> Shorty <em>(<strong>200 Credits</strong>)</em></li><br>
-                                <li> Classic <em>(<strong>FREE</strong>)</em></li><br>
-                                <li> Sheriff <em>(<strong>800 Credits</strong>)</em></li><br>
-                              </ol>
-                            </td>
-                            <td colspan = "1">
-                              <ol>
-                                <li> Spectre <em>(<strong>1,600 Credits</strong>)</em></li><br>
-                                <li> Stinger <em>(<strong>1,000 Credits</strong>)</em></li><br>
-                              </ol>
-                            </td>
-                            <td colspan = "1">
-                              <ol>
-                                <li> Judge <em>(<strong>1,500 Credits</strong>)</em></li><br>
-                                <li> Bucky <em>(<strong>900 Credits</strong>)</em></li><br>
-                              </ol>
-                            </td>
-                            <td colspan = "1">
-                              <ol>
-                                <li> Guardian <em>(<strong>2,700 Credits</strong>)</em></li><br>
-                                <li> Phantom <em>(<strong>2,900 Credits</strong>)</em></li><br>
-                                <li> Vandal <em>(<strong>2,900 Credits</strong>)</em></li><br>
-                                <li> Bulldog <em>(<strong>2,100 Credits</strong>)</em></li><br>
-                              </ol>
-                            </td>
-                            <td colspan = "1">
-                              <ol>
-                                <li> Operator <em>(<strong>4,500 Credits</strong>)</em></li><br>
-                                <li> Marshal <em>(<strong>1,100 Credits</strong>)</em></li><br>
-                              </ol>
-                            </td>
-                            <td colspan = "1">
-                              <ol>
-                                <li> Ares <em>(<strong>1,700 Credits</strong>)</em></li><br>
-                                <li> Odin <em>(<strong>3,200 Credits</strong>)</em></li><br>
-                              </ol>
-                            </td>
-                          </tr>
-                        </table>
-                        <!--Eric: Updated to use ID's-->
-                        <p class = "Strongcenter" id = "fineprint">As of 2020 beta low elo meta</p>
-                      </p>
-                      <!--Adds a clickable button with animation of changing when hovered over and clicked-->
-                      <a href="https://beta.playvalorant.com/en-us/"><div class="button1">Explore Valorant today!</div></a>
-                    </div>
-            </div>
-        </div>
-        <div class = "row">
-            <div class = "col-md-12">
-                <h1 id = "Ray"> Ray </h1>
-                <div class = "Strongcenter">
-                  <p>Coming soon!</p>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-  </body>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <title>Team 2</title>
+</head>
+<!--Satveer: Link External Style Sheet-->
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h1>Things To<br>Do<br>During<br>Quarantine</h1>
+      </div>
+      <!-- This table was edited and implemented by all of us.
+            This table gives the reader information on who we are (Name age grade)-->
+      <div class="col-md-6">
+        <h1>About Us</h1>
+        <!--INSTR: I'm not sure what's going on, but this table doesn't resize when the width of the browser window changes. I mean, it's sort of fine, but if you make it super narrow, it might be a problem. You've got this section in a flexbox container within a grid column that's set to the full 12 columns wide. What if you created two grid columns and put this stuff in there instead of the flexboxes?-->
+        <!--Satveer: Updated table to two gird columns instead of flexbox containers. It now resizes when the window width changes!-->
+        <table id = "table">
+          <!--<tr>
+            <th> First </th>
+            <th> Last </th>
+            <th> Age </th>
+            <th> Grade </th>
+          </tr>
+        -->
+        </table>
+        <script>
+          //Satveer: Using a 2D array to store table info.
+          var tableArray = [["First", "Last", "Age",  "Grade"],
+                            ["Eric", "Inoue", "20", "Sophomore"],
+                            ["Satveer", "Kaur", "19", "Junior"],
+                            ["Lars", "Vik", "19", "Sophomore"],
+                            ["Ray", "Yu", "19", "Freshmen"]]
+          table = document.getElementById("table");
+          //Satveer: Use nested for loops to display the contents.
+          for (var i = 0; i < tableArray.length; i++)
+          {
+            var newRow = table.insertRow(table.length);
+            for (var j = 0; j < tableArray[i].length; j++)
+            {
+              var cell = newRow.insertCell(j);
+              cell.innerHTML = tableArray[i][j];
+              if (i === 0)
+              {
+                //make the first row have the th stylization.
+              }
+            }
+          }
+        </script>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="navbar" href="#">
+          <div class="navbar">
+            <a class="nav-item nav-link active" href="#Lars">Lars <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#Satveer">Satveer</a>
+            <a class="nav-item nav-link" href="#Eric">Eric</a>
+            <a class="nav-item nav-link" href="#Ray">Ray</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <h1 id="Lars"> Lars </h1>
+      <!--Lars's works start's here, I'll be talking about Teamfight tactics
+                  and providing some insight on what I enjoy most about the game-->
+      <div>
+        <div class="textAlignHeading">
+          <h3 style="color:rgb(39, 102, 138)">Lars V's Activity</h3>
+        </div>
+        <!--Body Paragraph-->
+        <div class="textMargin">
+          <p>Quarentine has proven to be difficult when finding activities to do. I've been playing more piano
+            and similar to Eric and Satveer, I have started playing new games such as <em>Valorant</em> and <em>Animal
+              Crossing:
+              New Horizons.</em> However above all, I have gotten most of my enjoyment from <em>Teamfight Tactics,</em>
+            a strategy game
+            by Riot Games (the same developers as <em>Valorant</em> and <em>League of Legends.</em>) This game doesn't
+            require a good computer
+            to play which means you are able to play on mobile wherever you want! Although this is a free game, it also
+            doesn't
+            have the "pay to win" incentive unlike it's competitors.
+          </p>
+        </div>
+        <!--Second Paragraph-->
+        <div>
+          <strong>Resources I have used while learning:</strong><br>
+          <span>Since this game is based on strategy, it might seem daunting to play at first, however here are<br>
+            some resources I have used to help my gameplay, as well as my overall understanding of the game
+          </span>
+          <ul>
+            <li>
+              <a href="https://app.mobalytics.gg/tft/set3/team-comps"><strong>Team Composition Guide</strong></a></li>
+            <li>
+              <a href="https://www.mobafire.com/teamfight-tactics/items-cheatsheet#items-cheatsheet"><strong>Item
+                  Crafting Guide</strong></a></li>
+            <li>
+              <a href="https://www.youtube.com/channel/UCUT8RoNBTJvwW1iErP6-b-A/videos"><strong>Disguised Toast's
+                  Youtube Channel</strong></a></li>
+            <li>
+              <a href="https://www.youtube.com/user/scarraofficial/videos"><strong>scarra's Youtube Channel</strong></a>
+            </li>
+          </ul>
+        </div>
+        <!--Third Paragraph-->
+        <div>
+          <strong>Team Compositions</strong>
+          <span>After playing the game for a few weeks, I have started to lean towards some team compositions<br>
+            which I seem to prefer more than others. All have been provided by the guide mentioned above.
+          </span>
+          <!--INSTR: It doesn't matter so much now since right now classes and ids are basically serving the same function, but generally you want to restrict the use of ids for single elements. Each id should be used only once. This will become important as we get into coding and behavioral effects since javascript refers to elements by their ids. In other words, you should change roundImg2 to be a class instead of id.-->
+          <!--INSTR: I sort of expected you to change this after I left the above comment! You should fix all these ids to classes...-->
+          <ol class="olFormat">
+            <li><img id="roundImg2" src="images/Annie.jpg" alt="Mech Infiltraitors jpg" width="75"
+                style="margin:5px 0px;vertical-align:middle">
+              <!--INSTR: Generally, best practice to use all lowercase for tags so Strong should be strong.-->
+              <Strong style="font-size:150%;margin-left: 10px">Mech Infiltraitors</Strong></li>
+            <li><img id="roundImg2" src="images/Syndra.jpg" alt="Guardians of the Galaxy jpg" width="75"
+                style="margin:5px 0px;vertical-align:middle">
+              <Strong style="font-size:150%;margin-left: 10px">Guardians of the Galaxy</Strong></li>
+            <li><img id="roundImg2" src="images/Irelia.jpg" alt="Cybernetics jpg" width="75"
+                style="margin:5px 0px;vertical-align:middle">
+              <Strong style="font-size:150%;margin-left: 10px">Cybernetics</Strong></li>
+            <li><img id="roundImg2" src="images/Master_Yi.jpg" alt="Blade Bros" width="75"
+                style="margin:5px 0px;vertical-align:middle">
+              <Strong style="font-size:150%;margin-left: 10px">Blade Bros</Strong></li>
+            <li><img id="roundImg2" src="images/Jhin.jpg" alt="Jhin and Friends" width="75"
+                style="margin:5px 0px;vertical-align:middle">
+              <Strong style="font-size:150%;margin-left: 10px">Jhin and Friends</Strong></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Satveer's Work starts here. Focus: Animal Crossing New Horizons-->
+  <div class="row">
+    <div class="col-md-12">
+      <h1 id="Satveer"> Satveer </h1>
+      <div class="row">
+        <div class="column">
+          <div>
+            <p> One activity to do during quarantine is to play video games!
+              I am not a big gamer, but I love Animal Crossing. I bought a switch
+              just for <em>Animal Crossing New Horizons</em>! I've been playing it every
+              day since I got it. Here is some information about my island!*
+            </p>
+          </div>
+          <!--Satveer: Updated for major stylization. Uses classes, ids, in-line style, manipulation of images, etc.-->
+          <div>
+            <!--INSTR: It doesn't matter so much now since right now classes and ids are basically serving the same function, but generally you want to restrict the use of ids for single elements. Each id should be used only once. This will become important as we get into coding and behavioral effects since javascript refers to elements by their ids. In other words, you should change hovertext to be a class instead of id.-->
+            <!--Satveer:Updated hovertext ID to become a class!-->
+            <p><strong>Island Name:</strong><span class="hovertext"> Daydream</span><br>
+              <strong>Player Name:</strong><span class="hovertext"> Satveer</span><br>
+              <strong>Current Nicknames:</strong><span class="hovertext"> Sapphire </span>and <span
+                class="hovertext">Sweetkins</span><br>
+              <strong>Number of Residences:</strong> 10<br>
+            <div class="polaroid">
+              <img src="images/CurrentLayout.jpg" alt="Current Island Layout" width="200">
+              <div class="container-img">
+                <strong>Current Layout</strong>
+              </div>
+            </div>
+            <span style="padding-left: 0px;"><em>(<strong>Note:</strong> I am in the middle of
+                terraforming!)</em></span><br>
+            <br>
+            <div class="polaroid">
+              <img src="images/HappyIslandDesigner.png" alt="Desired Island Layout" width="200">
+              <div class="container-img">
+                <strong>(Current) Desired Layout</strong>
+              </div>
+            </div>
+            <em>(<strong>Note:</strong> Trees and flowers do not show up on the in-game map!)</em>
+            </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="column-center">
+            <p>
+              <!--Satveer: Updated for text stylization.-->
+              <strong style="color: #83a4d4;">List of Current Residences:</strong><br>
+            <ul>
+              <li>Astrid <em>(Leaving soon!)</em></li>
+              <li>Beardo</li>
+              <li>Boyd</li>
+              <li>Curlos</li>
+              <li>Merengue <em>(Moving in 04.22.20)</em></li>
+              <li>Puddles</li>
+              <li>Reneigh</li>
+              <li>Rhonda</li>
+              <li>Roald</li>
+              <li>Simon</li>
+            </ul>
+            <!--Satveer: Updated for text stylization.-->
+            <strong style="color: #83a4d4">List of All Residences:</strong><br>
+            <ul>
+              <li>Astrid</li>
+              <li>Beardo</li>
+              <li>Boyd</li>
+              <li>Curlos</li>
+              <li>Curly (Past)</li>
+              <li>Merengue</li>
+              <li>Puddles</li>
+              <li>Reneigh</li>
+              <li>Rhonda</li>
+              <li>Roald</li>
+              <li>Simon</li>
+            </ul>
+            <!--Satveer: Updated for text stylization.-->
+            <strong style="color: #83a4d4">Ranking My Current Villagers:</strong><br>
+            <ol>
+              <li>Roald</li>
+              <li>Puddles</li>
+              <li>Reneigh</li>
+              <li>Beardo</li>
+              <li>Merengue</li>
+              <li>Rhonda</li>
+              <li>Simion</li>
+              <li>Astrid</li>
+              <li>Boyd</li>
+              <li>Curlos</li>
+            </ol>
+            </p>
+            <!--Satveer: Updated to include id usage.-->
+            <p id="fineprint"><em>* Accurate as of April 21, 2020.</em></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <h1 id="Eric"> Eric </h1>
+      <h3 class="center">Valorant</h3>
+      <div class="Strongcenter">
+        <p> <span>Like most teenagers, I've turned to video games as a way to <br>
+            spend my free time during this quarantine.</span> Even before this quarantine <br>
+          I was a huge gamer. I even have my own custom built PC! Most gamers have <br>
+          heard of the new game <em>Valorant</em>, and if you haven't it's a new game coming <br>
+          out soon developed by Riot Games that's currently in closed beta. There are a <br>
+          few things you have to do in order to gain access to this beta. Here are a few tips <br>
+          that I used to get access to the game! </p>
+      </div>
+      <div>
+        <!--Eric: Updated for text stylization.-->
+        <p class="Strongcenter"><strong>How to get access to the <em>Valorant</em> closed beta:</strong><br>
+        <ul>
+          <li>Make or sign into a twitch account</li>
+          <li>Make a riot games account</li>
+          <li>Link said account with said twitch account</li>
+          <li>Watch any <em>Valorant</em> gameplay on the twitch platform</li>
+          <li>Once you've logged two hours of watch time you'll be entered into<br>
+            the pool for the day!</li>
+        </ul>
+        <strong>
+          <div class="Strongcenter">Some tips for the <em>Valorant</em> closed beta drop pool:</div>
+        </strong><br>
+        <ul>
+          <li>If you have the twitch stream muted, you will not recieve any drops!<br>
+            On chrome, right click the tab at the top and click <em>"mute site"</em></li>
+          <li>Once logged two hours, every additional time watched improves <br>
+            your chances until you hit 40 hours. At that point close the stream<br>
+            and wait 24 hours to rejoin the beta pool.</li>
+          <li>You do not need to be following said streamer or need to be active on stream.</li>
+        </ul>
+        <strong>
+          <div class="Strongcenter">Rankings of characters in <em>Valorant</em> (From Best - Worst):</div>
+        </strong><br>
+        <table width="100%">
+          <tr>
+            <th>Raze</th>
+            <th>Sova</th>
+            <th>Omen</th>
+            <th>Jett</th>
+            <th>Viper</th>
+            <th>Cypher</th>
+            <th>Pheonix</th>
+            <th>Brimstone</th>
+            <th>Cypher</th>
+            <th>Breach</th>
+          </tr>
+
+          <tr>
+            <td><img class="roundImg" src="images/Raze.PNG" alt="Raze" width="65"></td>
+            <td><img class="roundImg" src="images/Sova.PNG" alt="Sova" width="65"></td>
+            <td><img class="roundImg" src="images/Omen.PNG" alt="Omen" width="65"></td>
+            <td><img class="roundImg" src="images/Jett.PNG" alt="Jett" width="65"></td>
+            <td><img class="roundImg" src="images/Sage.PNG" alt="Sage" width="65"></td>
+            <td><img class="roundImg" src="images/Cypher.PNG" alt="Cypher" width="65"></td>
+            <td><img class="roundImg" src="images/Viper.PNG" alt="Viper" width="65"></td>
+            <td><img class="roundImg" src="images/Phoenix.PNG" alt="Pheonix" width="65"></td>
+            <td><img class="roundImg" src="images/Brimstone.PNG" alt="Brimstone" width="65"></td>
+            <td><img class="roundImg" src="images/breach.PNG" alt="Breach" width="65"></td>
+          </tr>
+
+        </table>
+        <strong class="container">
+          <div class="Strongcenter">Rankings of Weapons in <em>Valorant</em>(From Best-Worst):</div>
+        </strong><br>
+
+        <table>
+          <tr>
+            <th>Sidearms</th>
+            <th>SMGs</th>
+            <th>Shotguns</th>
+            <th>Rifles</th>
+            <th>Snipers</th>
+            <th>Heavy</th>
+          </tr>
+          <tr>
+            <td colspan="1">
+              <ol>
+                <li> Ghost <em>(<strong>500 Credits</strong>)</em></li><br>
+                <li> Frenzy <em>(<strong>400 Credits</strong>)</em></li><br>
+                <li> Shorty <em>(<strong>200 Credits</strong>)</em></li><br>
+                <li> Classic <em>(<strong>FREE</strong>)</em></li><br>
+                <li> Sheriff <em>(<strong>800 Credits</strong>)</em></li><br>
+              </ol>
+            </td>
+            <td colspan="1">
+              <ol>
+                <li> Spectre <em>(<strong>1,600 Credits</strong>)</em></li><br>
+                <li> Stinger <em>(<strong>1,000 Credits</strong>)</em></li><br>
+              </ol>
+            </td>
+            <td colspan="1">
+              <ol>
+                <li> Judge <em>(<strong>1,500 Credits</strong>)</em></li><br>
+                <li> Bucky <em>(<strong>900 Credits</strong>)</em></li><br>
+              </ol>
+            </td>
+            <td colspan="1">
+              <ol>
+                <li> Guardian <em>(<strong>2,700 Credits</strong>)</em></li><br>
+                <li> Phantom <em>(<strong>2,900 Credits</strong>)</em></li><br>
+                <li> Vandal <em>(<strong>2,900 Credits</strong>)</em></li><br>
+                <li> Bulldog <em>(<strong>2,100 Credits</strong>)</em></li><br>
+              </ol>
+            </td>
+            <td colspan="1">
+              <ol>
+                <li> Operator <em>(<strong>4,500 Credits</strong>)</em></li><br>
+                <li> Marshal <em>(<strong>1,100 Credits</strong>)</em></li><br>
+              </ol>
+            </td>
+            <td colspan="1">
+              <ol>
+                <li> Ares <em>(<strong>1,700 Credits</strong>)</em></li><br>
+                <li> Odin <em>(<strong>3,200 Credits</strong>)</em></li><br>
+              </ol>
+            </td>
+          </tr>
+        </table>
+        <!--Eric: Updated to use ID's-->
+        <p class="Strongcenter" id="fineprint">As of 2020 beta low elo meta</p>
+        </p>
+        <!--Adds a clickable button with animation of changing when hovered over and clicked-->
+        <a href="https://beta.playvalorant.com/en-us/">
+          <div class="button1">Explore Valorant today!</div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <h1 id="Ray"> Ray </h1>
+      <div class="Strongcenter">
+        <p>Coming soon!</p>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
