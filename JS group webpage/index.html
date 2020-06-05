@@ -107,6 +107,49 @@
       </nav>
     </div>
   </div>
+<<<<<<< HEAD
+=======
+<!--Script to greet the user depending on their time-->
+<div class="textAlignHeading">
+  <script>
+    var date = new Date();
+    var t = date.getHours();
+    var morning = "Good Morning! Welcome to Team 2's Page!";
+    var evening = "Good Evening! Welcome to Team 2's Page!";
+    var afternoon = "Good Afternoon! Welcome to Team 2's Page!";
+    if(t < 12 && t >= 5){ 
+      document.write(morning.bold() + "<br>");
+    }else if(t < 17){
+      document.write(afternoon.bold() + "<br>");
+    }else{
+      document.write(afternoon.bold() + "<br>");
+    }
+  </script>
+  <!--Script to tell when it will be the next time (after or evening) to meet the if and on click requirment-->
+  <script>
+    var date = new Date();
+    var t = date.getHours();
+    if(t < 12 && t >= 5){
+      document.write("<button onclick = 'WhenWillItBeAfternoon()'>" + "When Will it be the afternoon?" + "</button>");
+  }else if(t < 17){
+      document.write("<button onclick = 'WhenWillItBeEvening()'>" + "When Will it be the Evening?" + "</button>");
+  }else{
+      document.write("<button onclick = 'WhenWillItBeMorning()'>" + "When Will it be the Morning?" + "</button>");
+  }
+  function WhenWillItBeMorning(){
+    document.getElementById("input").innerHTML = "It will be the Morning in roughly " + (29-t) + " hours";  
+  }
+  function WhenWillItBeAfternoon(){
+    document.getElementById("input").innerHTML = "It will be the Afternoon in roughly " + (12 - t) + "hours";
+  }
+  function WhenWillItBeEvening(){
+    document.getElementById("input").innerHTML = "It will be the Evening in roughly " + (17 - t) + " hours";  
+  }
+  </script>
+
+  <p id = "input"></p>
+</div>
+>>>>>>> 9cc343f9d8a188e795ef07bbfd64461f2c6a41d6
 
   <div class="row">
     <div class="col-md-12">
