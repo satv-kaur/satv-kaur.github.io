@@ -26,7 +26,7 @@
         <!--INSTR: I'm not sure what's going on, but this table doesn't resize when the width of the browser window changes. I mean, it's sort of fine, but if you make it super narrow, it might be a problem. You've got this section in a flexbox container within a grid column that's set to the full 12 columns wide. What if you created two grid columns and put this stuff in there instead of the flexboxes?-->
         <!--Satveer: Updated table to two gird columns instead of flexbox containers. It now resizes when the window width changes!-->
         <table id="table">
-         <tr>
+          <tr>
             <th> First </th>
             <th> Last </th>
             <th> Age </th>
@@ -39,13 +39,11 @@
           ["Satveer", "Kaur", "19", "Junior"],
           ["Lars", "Vik", "19", "Sophomore"],
           ["Ray", "Yu", "19", "Freshmen"]],
-          table = document.getElementById("table");
+            table = document.getElementById("table");
           //Satveer: Use nested for loops to display the contents.
-          for (var i = 0; i < tableArray.length; i++)
-          {
+          for (var i = 0; i < tableArray.length; i++) {
             var newRow = table.insertRow(table.length);
-            for (var j = 0; j < tableArray[i].length; j++)
-            {
+            for (var j = 0; j < tableArray[i].length; j++) {
               var cell = newRow.insertCell(j);
               cell.innerHTML = tableArray[i][j];
             }
@@ -65,7 +63,7 @@
           //     // document.createElement("TH");
           //     // document.createElement("TH");
           //     // document.createElement("TH");
-              
+
           //     //console.log("backgroundColor" + .getComputedStyle.backgroundColor);
           //   // }
           //   // else {
@@ -79,18 +77,49 @@
     </div>
   </div>
   <!--Script to greet the user depending on their time-->
-  <div class="textAlignHeading"; style="padding-top: 20px; padding-bottom: 20px;">
+  <div class="textAlignHeading" style="padding-top: 20px; padding-bottom: 20px;">
     <script>
       var date = new Date();
       var t = date.getHours();
+      var morning = "Good Morning! Welcome to Team 2's Page!";
       var evening = "Good Evening! Welcome to Team 2's Page!";
       var afternoon = "Good Afternoon! Welcome to Team 2's Page!";
-      if (t < 12) {
-        document.write(evening.bold());
-      } else {
-        document.write(afternoon.bold());
+      if (t < 12 && t >= 5) {
+        document.write(morning.bold() + "<br>");
+      }
+      else if (t < 17) {
+        document.write(afternoon.bold() + "<br>");
+      }
+      else {
+        document.write(evening.bold() + "<br>");
       }
     </script>
+    <!--Script to tell when it will be the next time (after or evening) to meet the if and on click requirment-->
+    <script>
+      var date = new Date();
+      var t = date.getHours();
+      var message;
+      if (t < 12 && t >= 5) {
+        message = "Wow! Mornings are great, but how long do you have until the clock stricks noon?<br>";
+        document.write(message + "<button onclick = 'WhenWillItBeAfternoon()'>" + "Click me to find out!" + "</button>");
+      } else if (t < 17) {
+        message = "The clock's tickin'. How long do you have until the evening arrives?<br>";
+        document.write(messgage + "<button onclick = 'WhenWillItBeEvening()'>" + "Click me to find out!" + "</button>");
+      } else {
+        message = "The evening is here! Curious about when morning comes?<br>";
+        document.write(message + "<button onclick = 'WhenWillItBeMorning()'>" + "Click me to find out!" + "</button>");
+      }
+      function WhenWillItBeMorning() {
+        document.getElementById("input").innerHTML = "It will be the morning in roughly " + (29 - t) + " hours!";
+      }
+      function WhenWillItBeAfternoon() {
+        document.getElementById("input").innerHTML = "It will be the afternoon in roughly " + (12 - t) + "hours!";
+      }
+      function WhenWillItBeEvening() {
+        document.getElementById("input").innerHTML = "It will be the evening in roughly " + (17 - t) + " hours!";
+      }
+    </script>
+    <p id="input" style = "color: #C293FF; font-weight: 600"></p>
   </div>
   </div>
   <div class="row">
@@ -107,47 +136,6 @@
       </nav>
     </div>
   </div>
-<!--Script to greet the user depending on their time-->
-<div class="textAlignHeading">
-  <script>
-    var date = new Date();
-    var t = date.getHours();
-    var morning = "Good Morning! Welcome to Team 2's Page!";
-    var evening = "Good Evening! Welcome to Team 2's Page!";
-    var afternoon = "Good Afternoon! Welcome to Team 2's Page!";
-    if(t < 12 && t >= 5){ 
-      document.write(morning.bold() + "<br>");
-    }else if(t < 17){
-      document.write(afternoon.bold() + "<br>");
-    }else{
-      document.write(afternoon.bold() + "<br>");
-    }
-  </script>
-  <!--Script to tell when it will be the next time (after or evening) to meet the if and on click requirment-->
-  <script>
-    var date = new Date();
-    var t = date.getHours();
-    if(t < 12 && t >= 5){
-      document.write("<button onclick = 'WhenWillItBeAfternoon()'>" + "When Will it be the afternoon?" + "</button>");
-  }else if(t < 17){
-      document.write("<button onclick = 'WhenWillItBeEvening()'>" + "When Will it be the Evening?" + "</button>");
-  }else{
-      document.write("<button onclick = 'WhenWillItBeMorning()'>" + "When Will it be the Morning?" + "</button>");
-  }
-  function WhenWillItBeMorning(){
-    document.getElementById("input").innerHTML = "It will be the Morning in roughly " + (29-t) + " hours";  
-  }
-  function WhenWillItBeAfternoon(){
-    document.getElementById("input").innerHTML = "It will be the Afternoon in roughly " + (12 - t) + "hours";
-  }
-  function WhenWillItBeEvening(){
-    document.getElementById("input").innerHTML = "It will be the Evening in roughly " + (17 - t) + " hours";  
-  }
-  </script>
-
-  <p id = "input"></p>
-</div>
-
   <div class="row">
     <div class="col-md-12">
       <h1 id="Lars"> Lars </h1>
@@ -316,6 +304,16 @@
       </div>
     </div>
   </div>
+   <!--Satveer: Added an button. A pop-up alert!-->
+   <div class="row" style="justify-content: center; padding-bottom: 40px;">
+    <button type="button" class="btn btn-outline-primary btn-sm" onclick="displayError()">Click me!</button>
+  <script>
+    function displayError()
+    {
+      alert("Black Lives Matter!");
+    }
+  </script>
+</div>
   <div class="row">
     <div class="col-md-12">
       <h1 id="Eric"> Eric </h1>
@@ -458,6 +456,7 @@
     </div>
   </div>
   </div>
+  
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
