@@ -25,22 +25,20 @@
         <h1>About Us</h1>
         <!--INSTR: I'm not sure what's going on, but this table doesn't resize when the width of the browser window changes. I mean, it's sort of fine, but if you make it super narrow, it might be a problem. You've got this section in a flexbox container within a grid column that's set to the full 12 columns wide. What if you created two grid columns and put this stuff in there instead of the flexboxes?-->
         <!--Satveer: Updated table to two gird columns instead of flexbox containers. It now resizes when the window width changes!-->
-        <table id = "table">
-          <!--<tr>
+        <table id="table">
+         <tr>
             <th> First </th>
             <th> Last </th>
             <th> Age </th>
             <th> Grade </th>
           </tr>
-        -->
         </table>
         <script>
           //Satveer: Using a 2D array to store table info.
-          var tableArray = [["First", "Last", "Age",  "Grade"],
-                            ["Eric", "Inoue", "20", "Sophomore"],
-                            ["Satveer", "Kaur", "19", "Junior"],
-                            ["Lars", "Vik", "19", "Sophomore"],
-                            ["Ray", "Yu", "19", "Freshmen"]]
+          var tableArray = [["Eric", "Inoue", "20", "Sophomore"],
+          ["Satveer", "Kaur", "19", "Junior"],
+          ["Lars", "Vik", "19", "Sophomore"],
+          ["Ray", "Yu", "19", "Freshmen"]],
           table = document.getElementById("table");
           //Satveer: Use nested for loops to display the contents.
           for (var i = 0; i < tableArray.length; i++)
@@ -50,15 +48,49 @@
             {
               var cell = newRow.insertCell(j);
               cell.innerHTML = tableArray[i][j];
-              if (i === 0)
-              {
-                //make the first row have the th stylization.
-              }
             }
           }
+          //CODE WORKED ON IN CLASS
+          // for (var i = 0; i < tableArray.length; i++) 
+          // {
+          //   var newRow = table.insertRow(table.length);
+          //   for (var j = 0; j < 4; j++) 
+          //   {
+          //   var headerCell = document.createElement("TH");
+          //   headerCell.innerHTML = tableArray[0][j];
+          //   row.appendChild(headerCell);
+          //   //cell.style.backgroundColor = "violet";
+          //   }
+          //     // document.createElement("TH");
+          //     // document.createElement("TH");
+          //     // document.createElement("TH");
+          //     // document.createElement("TH");
+              
+          //     //console.log("backgroundColor" + .getComputedStyle.backgroundColor);
+          //   // }
+          //   // else {
+          //   //   for (var j = 0; j < tableArray[i].length; j++) {
+          //   //     //var cell = newRow.insertCell(j);
+          //   //     var cell = newRow.createElement("TH");
+          //   //     cell.innerHTML = tableArray[i][j];
+          //   //   } 
         </script>
       </div>
     </div>
+  </div>
+  <!--Script to greet the user depending on their time-->
+  <div class="textAlignHeading"; style="padding-top: 20px; padding-bottom: 20px;">
+    <script>
+      var date = new Date();
+      var t = date.getHours();
+      var evening = "Good Evening! Welcome to Team 2's Page!";
+      var afternoon = "Good Afternoon! Welcome to Team 2's Page!";
+      if (t < 12) {
+        document.write(evening.bold());
+      } else {
+        document.write(afternoon.bold());
+      }
+    </script>
   </div>
   </div>
   <div class="row">
@@ -75,20 +107,6 @@
       </nav>
     </div>
   </div>
-<!--Script to greet the user depending on their time-->
-<div class="textAlignHeading">
-  <script>
-    var date = new Date();
-    var t = date.getHours();
-    var evening = "Good Evening! Welcome to Team 2's Page!";
-    var afternoon = "Good Afternoon! Welcome to Team 2's Page!";
-    if(t < 12){ 
-      document.write(evening.bold());
-    }else{
-      document.write(afternoon.bold());
-    }
-  </script>
-</div>
 
   <div class="row">
     <div class="col-md-12">
