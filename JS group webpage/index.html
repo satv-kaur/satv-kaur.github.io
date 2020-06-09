@@ -26,16 +26,11 @@
         <!--INSTR: I'm not sure what's going on, but this table doesn't resize when the width of the browser window changes. I mean, it's sort of fine, but if you make it super narrow, it might be a problem. You've got this section in a flexbox container within a grid column that's set to the full 12 columns wide. What if you created two grid columns and put this stuff in there instead of the flexboxes?-->
         <!--Satveer: Updated table to two gird columns instead of flexbox containers. It now resizes when the window width changes!-->
         <table id="table">
-          <tr>
-            <th> First </th>
-            <th> Last </th>
-            <th> Age </th>
-            <th> Grade </th>
-          </tr>
         </table>
         <script>
           //Satveer: Using a 2D array to store table info.
-          var tableArray = [["Eric", "Inoue", "20", "Sophomore"],
+          var tableArray = [ ["First", "Last" , "Age", "Grade"],
+          ["Eric", "Inoue", "20", "Sophomore"],
           ["Satveer", "Kaur", "19", "Junior"],
           ["Lars", "Vik", "19", "Sophomore"],
           ["Ray", "Yu", "19", "Freshmen"]],
@@ -43,6 +38,12 @@
           //Satveer: Use nested for loops to display the contents.
           for (var i = 0; i < tableArray.length; i++) {
             var newRow = table.insertRow(table.length);
+            if (i == 0)
+            {
+              //Satveer: Updated script code to make the first row show up uniquely (It works now!)
+              newRow.style.backgroundColor = "#dddddd";
+              newRow.style.fontWeight = "bold";
+            }
             for (var j = 0; j < tableArray[i].length; j++) {
               var cell = newRow.insertCell(j);
               cell.innerHTML = tableArray[i][j];
@@ -101,13 +102,17 @@
       var message;
       if (t < 12 && t >= 5) {
         message = "Wow! Mornings are great, but how long do you have until the clock stricks noon?<br>";
-        document.write(message + "<button onclick = 'WhenWillItBeAfternoon()'>" + "Click me to find out!" + "</button>");
+        //Satveer: Updated message to be in it's own doc write to to make the text and button show up.
+        document.write(message);
+        document.write("<button onclick = 'WhenWillItBeAfternoon()'>" + "Click me to find out!" + "</button>");
       } else if (t < 17) {
         message = "The clock's tickin'. How long do you have until the evening arrives?<br>";
-        document.write(messgage + "<button onclick = 'WhenWillItBeEvening()'>" + "Click me to find out!" + "</button>");
+        document.write(message);
+        document.write("<button onclick = 'WhenWillItBeEvening()'>" + "Click me to find out!" + "</button>");
       } else {
         message = "The evening is here! Curious about when morning comes?<br>";
-        document.write(message + "<button onclick = 'WhenWillItBeMorning()'>" + "Click me to find out!" + "</button>");
+        document.write(message);
+        document.write("<button onclick = 'WhenWillItBeMorning()'>" + "Click me to find out!" + "</button>");
       }
       function WhenWillItBeMorning() {
         document.getElementById("input").innerHTML = "It will be the morning in roughly " + (29 - t) + " hours!";
