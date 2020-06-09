@@ -101,18 +101,15 @@
       var t = date.getHours();
       var message;
       if (t < 12 && t >= 5) {
-        message = "Wow! Mornings are great, but how long do you have until the clock stricks noon?<br>";
         //Satveer: Updated message to be in it's own doc write to to make the text and button show up.
-        document.write(message);
-        document.write("<button onclick = 'WhenWillItBeAfternoon()'>" + "Click me to find out!" + "</button>");
+        message = "Wow! Mornings are great, but how long do you have until the clock stricks noon?<br>";
+        document.write(message + "<button onclick = 'WhenWillItBeAfternoon()'> Click me to find out! </button>");
       } else if (t < 17) {
         message = "The clock's tickin'. How long do you have until the evening arrives?<br>";
-        document.write(message);
-        document.write("<button onclick = 'WhenWillItBeEvening()'>" + "Click me to find out!" + "</button>");
+        document.write(message + "<button onclick = 'WhenWillItBeEvening()'> Click me to find out! </button>");
       } else {
         message = "The evening is here! Curious about when morning comes?<br>";
-        document.write(message);
-        document.write("<button onclick = 'WhenWillItBeMorning()'>" + "Click me to find out!" + "</button>");
+        document.write(message + "<button onclick = 'WhenWillItBeMorning()'> Click me to find out! </button>");
       }
       function WhenWillItBeMorning() {
         document.getElementById("input").innerHTML = "It will be the morning in roughly " + (29 - t) + " hours!";
