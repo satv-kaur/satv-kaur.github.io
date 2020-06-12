@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-     <!-- Required meta tags -->
-     <meta charset="utf-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-     <!-- Bootstrap CSS -->
-     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <title>Satveer Kaur</title>
 </head>
 <!--StyleSheet Link-->
@@ -13,147 +14,168 @@
 
 <body>
     <!--Responsive, vertical sidebar. Right Side.-->
-    <div class="sidenav" style ="align-items:center">
+    <div class="sidenav" style="align-items:center">
         <a href="about.html">About</a>
         <a href="see-works.html">See Works</a>
-      </div>
+    </div>
     <!--Introduction-->
-    <div class = "container">
-        <div class = "row">
-            <div class = "col-md-12">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
                 <h1>Satveer Kaur</h1>
                 <!--Video for aesthetic purposes-->
                 <video height="500" autoplay loop muted>
-                <source src="media/New Project 82 [D13B621].mp4" type="video/mp4">
-                </video>  
-                <p><strong>This is a "mockup" portfolio.<br></strong>
-                    Most works are a mimic of projects I have displayed in my real portfolio. Feel free to explore!</p>
+                    <source src="media/New Project 82 [A205CF9].mp4" type="video/mp4">
+                </video>
+                <div class="fixRightView" style="padding-top: 30px; padding-bottom: 30px;">
+                    <p><strong>This is a "mockup" portfolio.<br></strong>
+                        Most works are a mimic of projects I have displayed in my real portfolio. Feel free to explore!
+                    </p>
+                </div>
+                <div class="removeFixRightView" style="padding-top: 30px; padding-bottom: 30px;">
+                    <p><strong>This is a "mockup" portfolio.<br></strong>
+                        Most works are a mimic of projects I have displayed in my real portfolio. Feel free to explore!
+                    </p>
+                </div>
             </div>
         </div>
-        <!--NOTE FOR ALL: Link each image to poject's individual page.-->
-        <!--Project One-->
-        <div class="row">
-            <div class = "d-flex p-2"; style = "justify-content: space-evenly">
-                
-                <div class = "p-2;";>
-                    <!--NOTE: Change bg color to peach.-->
-                    <h6>BLM</h6>
-                    <h3>BLACK LIVES MATTER</h3>
-                    <!--Slideshow Animation-->
-                    <div class="slideshow-container">
 
-                        <!-- Full-width images with number and caption text -->
-                        <div class="mySlides fade">
-                          <div class="numbertext">1 / 3</div>
-                          <img src="media/blmgn-profile-picture-0520-blm-1080x1080-01.jpg" style="width:100%">
+        <!--Project One-->
+        <!--NOTE FOR ALL: Link each image to poject's individual page.-->
+        <div class="row">
+            <div class="col-md-6" style="background-color: #F59F76;">
+                <h6 style="padding-top: 30px;">BLM</h6>
+                <h3>BLACK LIVES MATTER</h3>
+                <!--Slideshow Animation-->
+                <div id="carousel" class="carousel slide" data-ride="carousel" data-interval="3500"
+                    style="padding: 50px;">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel" data-slide-to="1"></li>
+                        <li data-target="#carousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="media/blmgn-profile-picture-0520-blm-1080x1080-01.jpg"
+                                alt="Black Lives Matter">
                         </div>
-                      
-                        <div class="mySlides fade">
-                          <div class="numbertext">2 / 3</div>
-                          <img src="media/blmgn-profile-picture-0520-enough-is-enough-1080x1080-01.jpg" style="width:100%">
+                        <div class="carousel-item">
+                            <img class="d-block w-100"
+                                src="media/blmgn-profile-picture-0520-enough-is-enough-1080x1080-01.jpg"
+                                alt="Enough Is Enough">
                         </div>
-                      
-                        <div class="mySlides fade">
-                          <div class="numbertext">3 / 3</div>
-                          <img src="media/blmgn-profile-picture-0520-stop-killing-us-1080x1080-01.jpg" style="width:100%">
+                        <div class="carousel-item">
+                            <img class="d-block w-100"
+                                src="media/blmgn-profile-picture-0520-stop-killing-us-1080x1080-01.jpg"
+                                alt="Stop Killin Us">
                         </div>
-                      </div>
-                      <br>
-                      <script>
-                        var slideIndex = 0;
-                        showSlides();
-                        function showSlides() {
-                        var i;
-                        var slides = document.getElementsByClassName("mySlides");
-                        for (i = 0; i < slides.length; i++) {
-                            slides[i].style.display = "none";
-                        }
-                        slideIndex++;
-                        if (slideIndex > slides.length) {slideIndex = 1}
-                        slides[slideIndex-1].style.display = "block";
-                        setTimeout(showSlides, 2000); // Change image every 2 seconds
-                        }
-                        </script>
-                        <p>
-                           Black Lives Matter.<br>
-                           Your silence is compliance. When you stay quiet, you side with the oppressor. Now, it isn't enough to be "not racist"; you must actively be anti-racist.<br>
-                           There is no justice until there is justice for all. 
-                        </p>
                     </div>
+                </div>
+            </div>
+            <div class="col-md-6" style="background-color: white;">
+                <div class="fixRightView">
+                    <p style="padding: 50px;">
+                        Black Lives Matter.<br>
+                        Your silence is compliance. When you stay quiet, you side with the oppressor. Now, it isn't
+                        enough to be "not racist"; you must actively be anti-racist.<br>
+                        There is no justice until there is justice for all.
+                    </p>
+                </div>
+                <!-- Show without extra right padding when screensize becomes small and sidebar dissapears.-->
+                <div class="removeFixRightView">
+                    <p style="padding: 50px;">
+                        Black Lives Matter.<br>
+                        Your silence is compliance. When you stay quiet, you side with the oppressor. Now, it isn't
+                        enough to be "not racist"; you must actively be anti-racist.<br>
+                        There is no justice until there is justice for all.
+                    </p>
+                </div>
             </div>
         </div>
 
         <!--Project Two-->
-        <div class="row">
-            <div class = "col-md-12">
-                <!--NOTE: Change bg color to bold orange-->
-                <!--Image-->
-                <img src="media/640x1136-light-gray-solid-color-background.jpg" style="width: 300px; height:400px; align-self:center;">
-                <h6 style="padding-top: 10px;">Software Proposal</h6>
-                <h3 style= "font-size: 15px;">Cosmic Cafe</h3>
+        <div class="row" style="background-color: #FB5605; ">
+            <div class="col-md-12" style="padding: 30px">
+                <div class="fixRightView">
+                    <img src="media/softwareprop.jpg" style="display: block; margin-left: auto;
+                    margin-right: auto; width: 300px; height:400px;">
+                    <h6 style="padding-top: 10px; padding-right: 50px; text-align: center;">Software Proposal</h6>
+                    <h3 style="font-size: 15px; padding-right: 50px; text-align: center;">The Butterfly Project</h3>
+                </div>
+                <div class="removeFixRightView">
+                    <img src="media/softwareprop.jpg" style="display: block; margin-left: auto;
+                    margin-right: auto; width: 300px; height:400px;">
+                    <h6 style="padding-top: 10px; text-align: center;">Software Proposal</h6>
+                    <h3 style="font-size: 15px; text-align: center;">The Butterfly Project</h3>
+                </div>
             </div>
         </div>
 
         <!--Project Three & Four-->
         <div class="row">
-            <div class = "d-flex p-2"; style = "justify-content: space-evenly">
-                <div class = "p-2;" style = "border: solid; border-color: #E8E6E6; border-width: 10px;">
-                    <!--NOTE: Change bg color to gray.-->
-                    <!--Image-->
-                    <img src="media/Images.jpg" style="width: 300px; height:400px; align-self:center;">
-                    <h6 style="padding-top: 10px;">Collection: Images</h6>
-                    <h3 style= "font-size: 15px;">Images</h3>
-                </div>
-
-                <div class = "p-2;" style = "border: solid; border-color: #E8E6E6; border-width: 10px;" >
-                    <!--Image-->
-                    <img src="media/Videos.jpg" style="width: 300px; height:400px; align-self:center;">
-                    <h6 style ="padding-top: 10px;">Collection: Videos</h6>
-                    <h3 style= "font-size: 15px;">Videos</h3>
-                </div>
+            <!-- Images Credit: Olga Serjantu on Unsplash -->
+            <div class="col-md-6" style="padding: 30px; background-color: #C7C7C7;">
+                <img src="media/olga-serjantu-5z5jDehxSaM-unsplash.jpg" style="width: 320px; display: block; margin-left: 0em;
+                    margin-right: auto;">
+                <h6 style="padding-top: 10px;">Collection:
+                    Images</h6>
+                <h3 style="font-size: 15px;">
+                    Images</h3>
+            </div>
+            <div class="col-md-6" style="padding: 30px;">
+                <img src="media/olga-serjantu-4bALflZyewY-unsplash.jpg" style="width: 320px; display: block; margin-left: 0em;
+                    margin-right: auto;">
+                <h6 style="padding-top: 10px;">Collection:
+                    Videos</h6>
+                <h3 style="font-size: 15px;">
+                    Videos</h3>
             </div>
         </div>
 
         <!--Project Five-->
-        <div class="row">
-            <!--NOTE: Change bg color to yellow (BOTH).-->
-            <div class = "col-md-12">
-                <div class = "p-2;">
+        <div class="row" style="background-color: #F9D059;">
+            <div class="col-md-6" style="padding: 30px;">
                 <!--Image-->
-                <img src="media/animal-crossing-new-horizons-key-artwork-january-2020-large-logo.png" style="height: 300px; align-self:center;">
-                </div>
-
-                <div class = "p-2;">
-                    <h6>Video Game</h6>
-                    <h3>ACNH</h3>
-                    <!--Slideshow Animation-->
-                    <div class="slideshow-container">
-
-                        <!-- Full-width images with number and caption text -->
-                        <div class="mySlides">
-                          <div class="numbertext">1 / 4</div>
-                          <img src="media/20200602_164650.jpg" style="width:100%">
+                <img src="media/thisisagame.jpg" style="width: 400px; display: block; margin-left: auto;
+                    margin-right: auto; margin-top: 8.5em;">
+            </div>
+            <div class="col-md-6" style="padding: 30px;">
+                <h6>Video Game</h6>
+                <h3 style="font-size: 80px;">GA-</h3>
+                <h3 style="font-size: 80px; padding-left: 120px;">-ME</h3>
+                <!--Slideshow Animation-->
+                <div id="carouselWithIndicators" class="carousel slide" data-ride="carousel" data-interval="5000"
+                    style="padding: 50px;">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselWithIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselWithIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselWithIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="media/twoplayers.jpg" alt="Two Players">
                         </div>
-                      
-                        <div class="mySlides">
-                          <div class="numbertext">2 / 4</div>
-                          <img src="media/20200602_164656.jpg" style="width:100%">
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="media/onegoal.jpg" alt="One Goal">
                         </div>
-                      
-                        <div class="mySlides">
-                          <div class="numbertext">3 / 4</div>
-                          <img src="media/20200602_164659.jpg" style="width:100%">
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="media/readytoplay.jpg" alt="Ready To Play?">
                         </div>
-                        <div class="mySlides">
-                            <div class="numbertext">4 / 4</div>
-                            <img src="media/20200602_164702.jpg" style="width:100%">
-                          </div>
-                      </div>
-                      <br>
+                    </div>
                 </div>
             </div>
-         </div>
-    
+        </div>
     </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,4 +1,3 @@
-
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 body {
     background-color: #E8E6E6
@@ -27,27 +26,9 @@ p {
     font-size: 20px;
 }
 
-/*Colors*/
-#white-color
-{
-    color: white;
-}
-#peach-color
-{
-    color: #F59F76
-}
-#bold-orange-color
-{
-    color: #FB5605;
-}
-#gray-color
-{
-    color: #C7C7C7;
-}
-#yello-color
-{
-    color: #F9D059;
-}
+a { 
+  text-decoration: none;
+ }
 
 /*Sidebar CSS*/
 .sidenav {
@@ -80,50 +61,63 @@ p {
   .sidenav a:hover {
     color: white;
   }
+
+  /* Make the sidebar disappear after a certain window size to not effect
+    view of/hide other elements behind it. */
+  @media screen and (max-width: 767px) {
+    .sidenav{
+      display: none;
+    }
+    .fixRightView{
+      display: none;
+    }
+    .removeFixRightView{
+      display: inline;
+    }
+    #displayProj4{
+      display: none;
+    }
+    #displayProj4-5{
+      display: inline;
+    }
+  }
   
-  /* Style page content */
-  .main {
-    margin-left: 160px; /* Same as the width of the sidebar */
-    padding: 0px 10px;
+  @media screen and (min-width: 768px){
+    .removeFixRightView{
+      display: none;
+    }
+    #displayProj4-5{
+      display: none;
+    }
   }
 
-  /*SlideShow*/
-  * {box-sizing:border-box}
+/* Move right elemets over to prevent being hidden by sidebar */
+ .fixRightView {
+  padding-right: 100px;
+}
 
-/* Slideshow container */
-.slideshow-container {
-  max-width: 500px;
+.removeFixRightView {
+  padding: auto;
+}
+
+/* Center and crop image to 100px square */
+.thumbnail {
   position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
 }
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
+.thumbnail img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  width: auto;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
 }
-
-/* Number text (1/3 etc) */
-.numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  }
-
-/* Fading animation */
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-  
-  @-webkit-keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
-  
-  @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
+.thumbnail img.portrait {
+  width: 100%;
+  height: auto;
+}
